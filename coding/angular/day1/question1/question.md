@@ -1,0 +1,1 @@
+You're debugging a component where a @Input() bound object's nested property changes, but the view doesn't update even though ChangeDetectionStrategy.OnPush is set. Walk me through why this happens and what your options are to fix it.

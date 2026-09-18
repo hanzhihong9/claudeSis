@@ -1,0 +1,105 @@
+:host {
+  display: block;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  min-height: 100vh;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.demo-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0 0 12px;
+  color: #1f2937;
+}
+
+.lead {
+  margin: 0 0 24px;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.toolbar {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.status-box {
+  background: #fff;
+  border: 1px solid #dfe7f1;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 24px;
+  color: #374151;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #dfe7f1;
+  border-radius: 12px;
+  padding: 16px;
+  min-height: 160px;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.04);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card.bad {
+  border-left: 6px solid #ef4444;
+}
+
+.card.good {
+  border-left: 6px solid #22c55e;
+}
+
+.card.warn {
+  border-left: 6px solid #f59e0b;
+}
+
+.card.async {
+  border-left: 6px solid #8b5cf6;
+}
+
+.card p {
+  margin: 8px 0;
+  color: #374151;
+}
+
+.card small {
+  display: block;
+  margin-top: 12px;
+  color: #6b7280;
+}
+
+.card button {
+  margin-top: 12px;
+}

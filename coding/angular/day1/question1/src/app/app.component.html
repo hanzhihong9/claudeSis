@@ -1,0 +1,24 @@
+<main class="demo-shell">
+  <h1>OnPush + nested object mutation demo</h1>
+
+  <p class="lead">
+    The parent mutates the same object instance. For a child with OnPush, Angular only checks it when the input reference changes.
+  </p>
+
+  <div class="toolbar">
+    <button type="button" (click)="mutateNestedProperty()">Mutate object in place</button>
+    <button type="button" class="secondary" (click)="replaceReference()">Create new object reference</button>
+    <button type="button" class="secondary" (click)="reset()">Reset</button>
+  </div>
+
+  <div class="status-box">
+    <strong>Last action:</strong> {{ lastAction }}
+  </div>
+
+  <div class="grid">
+    <app-broken-child [profile]="profile"></app-broken-child>
+    <app-fixed-ref-child [profile]="profile"></app-fixed-ref-child>
+    <app-mark-for-check-child [profile]="profile"></app-mark-for-check-child>
+    <app-async-child></app-async-child>
+  </div>
+</main>
