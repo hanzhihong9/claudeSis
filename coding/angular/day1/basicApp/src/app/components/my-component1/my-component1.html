@@ -1,1 +1,14 @@
-<p>my-component1 works!</p>
+<p>this is a hard code content: my-component1 works!</p>
+<p> there is a string : {{ myProperty }}</p>
+<!-- private readonly object property cannot be interpulated directly in the template
+<p>there is a object : {{ objectProperty.key }} - {{ objectProperty.count }}</p> 
+-->
+<!--  using () for event binding  -->
+<button (click)="myProperty = 'New Value from HTML template'">Change My Property in HTML template</button>
+<button (click)="onClick()">Change My Property in Component</button>
+<!-- using [] in attribute binding for dynamic values -->
+<img [src]="imgURL" alt="Placeholder Image">
+<br />
+<!-- using [()] for event + property binding -->
+<input type="text" [(ngModel)]="aInputValue" />
+<p>Input value: {{ aInputValue }}</p>
